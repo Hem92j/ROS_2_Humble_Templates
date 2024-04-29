@@ -19,7 +19,7 @@ SimplePublisher::SimplePublisher() : Node("simple_publisher"), count(0)
 void SimplePublisher::timer_callback() {
 
     auto msg = std_msgs::msg::String();
-    msg.data = "I am publishing data. count:  " + std::to_string(count++);    
+    msg.data = "count:  " + std::to_string(count++);    
     publisher_->publish(msg);
 
 }
