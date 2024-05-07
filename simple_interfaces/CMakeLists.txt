@@ -13,6 +13,7 @@ find_package(std_msgs REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/GetImage.srv"
+  "action/CountUntil.action"
   DEPENDENCIES sensor_msgs std_msgs
 )
 
